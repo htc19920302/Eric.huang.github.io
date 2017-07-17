@@ -1,0 +1,10 @@
+<div class="w-display" :style="{backgroundColor: color}">
+    <div class="w-display_img" v-el="imageWrap">
+        <img :src="src">
+    </div>
+
+    <div class="w-display_zoom">
+        <w-zoom :scale.sync="scale"></w-zoom>
+    </div>
+    <a class="w-display_refresh" @click.prevent.stop="refresh"></a>
+</div>
